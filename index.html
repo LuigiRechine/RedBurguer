@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedBurguer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/red_burger-removebg-preview.png" alt="">
+        </div>
+        <div class="categoria">
+            <a href="#classicos">Clássicos</a>
+        </div>
+        <div class="categoria">
+            <a href="#smashs">Smashs</a>
+        </div>
+        <div class="search">
+            <input id="search-input" type="search">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </div>
+        <div class="categoria">
+            <a href="#acompanhamentos">Acompanhamentos</a>
+        </div>
+        <div class="categoria">
+            <a href="">Pedido</a>
+        </div>
+        <div class="categoria">
+            <p onclick="garçom()" href="">Chamar garçom</a>
+        </div>
+    </nav>
+    <hr>
+        <div class="img">
+    <img src="/img/banner.png" onclick="destaques()" alt="Banner New Cheddar" style="cursor: pointer;">
+</div>
+
+<div class="destaque" id="destaque">
+    <h1 class="desta">DESTAQUES</h1>
+    <div class="lanches">
+        <div class="d1"><img src="img/smash_newcheddar.jpg" alt=""></div>
+        <div class="d2"><img src="img/BEST_BACON.jpg" alt=""></div>
+        <div class="d3"><img src="img/KIPONION.jpg" alt=""></div>
+        <div class="d4"><img src="img/melt.jpg" alt=""></div>
+    </div>
+</div>
+    <div class="classicos" id="classicos">
+        <h1 class="title">Clássicos</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="card-cima">
+                    <img src="img/starburger-7047.jpg" alt="">
+                    <p>Burger</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 25,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-cima">
+                    <img src="img/BURGER_CHEDDAR.jpg" alt="">
+                    <p>Burger cheddar</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 25,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-cima">
+                    <img src="img/MILHO.jpg" alt="">
+                    <p>Cheese milho</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 26,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-cima">
+                    <img src="img/saladaburger.jpg" alt="">
+                    <p>Salada burger</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 27,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-cima">
+                    <img src="img/BURGER_BACON.jpg" alt="">
+                    <p>Burger bacon</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 28,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="smashs" id="smashs">
+        <h1 class="title">Smash</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="card-cima">
+                    <img src="img/mortz.jpg" alt="">
+                    <p>Mortz</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 33,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-cima">
+                    <img src="img/paulista.jpg" alt="">
+                    <p>Paulista</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 34,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-cima">
+                    <img src="img/smash_newcheddar.jpg" alt="">
+                    <p>New cheddar</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 34,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-cima">
+                    <img src="img/SMASH_CADILLAC.jpg" alt="">
+                    <p>Cadillac</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 37,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-cima">
+                    <img src="img/smash_bestbacon.jpg" alt="">
+                    <p>Best bacon</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 34,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="acompanhamentos" id="acompanhamentos">
+        <h1 class="title">Acompanhamentos</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="card-cimaA">
+                    <img src="img/photo.jpeg" alt="">
+                    <p>Batata M</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 27,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-cimaA">
+                    <img src="img/refrigerante-coca-cola-zero-lata-350ml_10884.webp" alt="">
+                    <p>Coca lata zero</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 7,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-cimaA">
+                    <img src="img/02a8d987-34b4-47ab-84a9-9e8147e9cfd2.jpg" alt="">
+                    <p>Coca lata</p>
+                </div>
+                <div class="card-baixo">
+                    <div class="card-baixo">
+                        <div class="add">
+                            <p class="btn-add" id="add" style="cursor:pointer;">Adicionar</p>
+                            <p class="preco-card">R$ 7,00</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-burger" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+        
+            <h2 id="modal-titulo">Nome do Lanche</h2>
+        
+            <img id="modal-img" src="" alt="Imagem do Lanche">
+        
+            <p id="modal-descricao">Carregando descrição...</p>
+        
+            <div id="lista-ingredientes"></div>
+
+            <div class="modal-buttons">
+                <button class="btn-vermelho-full" id="btn-fechar-pedido">Adicionar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="aba-pedido" class="sidebar-pedido">
+        <div class="sidebar-header">
+            <h2>Meu Pedido</h2>
+            <span class="close-sidebar">&times;</span>
+        </div>
+        <div id="itens-pedido" class="corpo-pedido"></div>
+        <div class="sidebar-footer">
+            <div class="total-container">
+                <span>Total:</span>
+                <span id="total-pedido">R$ 0,00</span>
+            </div>
+            <button class="btn-cozinha" id="btn-enviar-cozinha">Enviar para a Cozinha</button>
+        </div>
+    </div>
+<div id="overlay-pedido" class="overlay"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>

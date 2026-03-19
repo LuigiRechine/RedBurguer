@@ -4,7 +4,7 @@ Este é um sistema de pedidos de lanches desenvolvido como um cardápio interati
 
 ## 🌐 Acesse o Projeto
 
-👉 [https://seu-usuario.github.io/seu-repositorio/](https://luigirechine.github.io/RedBurguer/)
+👉 https://luigirechine.github.io/RedBurguer/
 
 ## 🚀 Funcionalidades
 
